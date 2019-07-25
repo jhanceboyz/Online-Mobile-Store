@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AMasterPage.master.cs" Inherits="admin_AMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <!-- including stylesheets -->
+	<link rel="stylesheet" href="../assets/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/css/core.css">
+	<link rel="stylesheet" href="../assets/css/theme.css">
+	<!-- including layerslider stylesheets -->
+	<link rel="stylesheet" href="../assets/css/layerslider.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <div class="site-wrapper">
+		<header class="site-header">
+			<div class="top-bar"><div class="container">
+				<div class="left"><div class="widget">
+					<ul class="social">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-google-plus"></a></li>
+						<li><a href="#" class="fa fa-youtube"></a></li>
+					</ul>
+				</div></div>
+				<div class="right">
+					<div class="widget text"><span class="fa fa-phone"></span>+ 91 98888 98888</div>
+					<div class="widget text"><span class="fa fa-envelope-o"></span><a href="">Support@mobiestore.com</a></div>
+				</div>
+			</div></div>
+			<div class="nav-wrap"><div class="container">
+				<div class="site-logo retina">
+					<a href="Default.aspx"><img src="../images/tms_logo.jpg" alt="Mobile Store logo"/></a>
+				</div>
+				<nav class="site-navigation">
+					<ul>
+						<li class="menu-item-has-children"><a href="">ADD DETAIL</a>
+							<ul class="sub-menu">
+								<li><a href="addbrand.aspx">Add Brand</a></li>
+								<li><a href="addcategory.aspx">Add Category</a></li>
+								<li><a href="addmobile.aspx">Add Mobile</a></li>
+                                <li><a href="Features.aspx">Add Features</a></li>
+                            </ul>
+						</li>
+                        <li class="menu-item-has-children"><a href="">EDIT DETAIL</a>
+							<ul class="sub-menu">
+								<li><a href="Editbrand.aspx">Edit Brand</a></li>
+								<li><a href="editcategory.aspx">Edit Category</a></li>
+								<li><a href="editmobile.aspx">Edit Mobile</a></li>
+                            </ul>
+						</li>
+                        <li class="menu-item-has-children"><a href="">CHECK ORDERS DETAIL</a>
+							<ul class="sub-menu">
+								<li><a href="CheckOrder.aspx">Check Orders</a></li>
+								<li><a href="CheckOrderbyDate.aspx">Check Orders by Date</a></li>
+                                <li><a href="CheckPayment.aspx">Check Payments</a></li>
+                            </ul>
+						</li>
+                        <li class="menu-item-has-children"><a href="">CHECK FEEDBACK</a>
+							<ul class="sub-menu">
+								<li><a href="checkfeedback.aspx">Check Feedback</a></li>
+                            </ul>
+						</li>
+                        <li class="menu-item-has-children"><a href="">SETTINGS</a>
+							<ul class="sub-menu">
+								<li><a href="changepassword.aspx">Change Password</a></li>
+								<li><asp:LoginStatus ID="LoginStatus1" runat="server"></asp:LoginStatus></li>
+                            </ul>
+						</li>                        
+					</ul>
+				</nav>
+		    </div></div>
+			<div class="sticky-holder"></div>
+		</header>
+		
+        
+        <section class="statement" style="background-image: url(../images/demo/statement_box_index.jpg); margin-bottom: 10px;">
+			<div class="container text-center">
+				<h1 class="style-2">The Mobile Store Websie</h1>
+				<h2>Pick The Best Mobile From Our Store</h2>
+				<a href="" target="_blank" class="btn btn-md"><span class="fa fa-arrow-circle-o-down"></span> Buy now</a>
+			</div>
+		</section>
+        <section>
+			<div class="container"><div class="row" style="margin-top: 35px; margin-bottom: 10px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div></div>
+        </section>
+		<%--<section>
+			<ul class="logos logos-5">
+				<li><a href="#"><img src="images/demo/envato.png" alt="Envato logo"><span class="hover"><img src="images/demo/envato-hover.png" alt="Envato logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/dribble.png" alt="Dribble logo"><span class="hover"><img src="images/demo/dribble-hover.png" alt="Dribble logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/facebook.png" alt="Facebook logo"><span class="hover"><img src="images/demo/facebook-hover.png" alt="Facebook logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/twitter.png" alt="Twitter logo"><span class="hover"><img src="images/demo/twitter-hover.png" alt="Twitter logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/behance.png" alt="Behance logo"><span class="hover"><img src="images/demo/behance-hover.png" alt="Behance logo hover"></span></a></li>
+			</ul>
+			<div class="container text-center">
+				<h3 class="style-2">some of our clients that trust us, be shure to be one of them</h3>
+			</div>
+		</section>--%>
+		<footer class="site-footer">
+			
+			<div class="copyright-footer text-center">
+				<div class="container">
+					<div class="row">
+						copyright 2016 © TheMobileStore.com. Designed By Simranjit Singh
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+    </div>
+    <!-- including scripts -->
+	<script src="../assets/js/jquery.js"></script>
+	<script src="../assets/js/bootstrap/tab.js"></script>
+	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/js/bootstrap/alert.js"></script>
+	<script src="../assets/js/smoothscroll.js"></script>
+	<!-- including layerslider scripts -->
+	<script src="../assets/js/greensock.js"></script>
+    <script src="../assets/js/layerslider.transitions.js"></script>
+    <script src="../assets/js/layerslider.kreaturamedia.jquery.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $('#layerslider').layerSlider({
+	 			skin 				: 'altus',
+            	skinsPath 			: '../assets/css/layerslider/skins/',
+            	responsiveUnder		: 1200,
+            	layersContainer 	: 1200,
+            	responsive 			: false,
+            	showCircleTimer 	: false,
+            	thumbnailNavigation : 'disabled',
+            	navStartStop		: false,
+	        });
+	    });
+	</script>
+    </form>
+</body>
+</html>

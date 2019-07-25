@@ -1,0 +1,168 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <!-- including stylesheets -->
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/core.css">
+	<link rel="stylesheet" href="assets/css/theme.css">
+	<!-- including layerslider stylesheets -->
+	<link rel="stylesheet" href="assets/css/layerslider.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div class="site-wrapper">
+		<header class="site-header">
+			<div class="top-bar"><div class="container">
+				<div class="left"><div class="widget">
+					<ul class="social">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-google-plus"></a></li>
+						<li><a href="#" class="fa fa-youtube"></a></li>
+					</ul>
+				</div></div>
+				<div class="right">
+					<div class="widget text"><span class="fa fa-phone"></span>+ 91 98888 98888</div>
+					<div class="widget text"><span class="fa fa-envelope-o"></span><a href="">Support@mobiestore.com</a></div>
+				</div>
+			</div></div>
+			<div class="nav-wrap"><div class="container">
+				<div class="site-logo retina">
+					<a href="Default.aspx"><img src="images/tms_logo.jpg" alt="Mobile Store logo"/></a>
+				</div>
+				<nav class="site-navigation">
+					<ul>
+						<li><a href="Default.aspx">Home</a></li>								
+						<li class="menu-item-has-children  megamenu">
+							<a href="">Mobiles</a>
+							<div class="sub-menu"><ul class="container">
+								<li class="col-md-2 col-md-offset-1">
+									<h4>Mobiles</h4>
+									<ul>
+										<li><a href="Samsung.aspx">Samsung</a></li>
+										<li><a href="htc.aspx">HTC</a></li>
+                                        <li><a href="microsoft.aspx">Microsoft</a></li>
+										<li><a href="Micromax.aspx">Micromax</a></li>
+                                        <li><a href="Apple.aspx">Apple</a></li>
+									</ul>
+								</li>								
+								<li class="col-md-4">
+									<h4>Mobile</h4>
+									<img src="images/menu/1.png" alt="Megamenu image"/>
+								</li>
+							</ul></div>
+						</li>
+                        <li class="menu-item-has-children  megamenu">
+							<a href="">Tablets</a>
+							<div class="sub-menu"><ul class="container">
+								<li class="col-md-2 col-md-offset-1">
+									<h4>Tablets</h4>
+									<ul>
+										<li><a href="samsungtab.aspx">Samsung</a></li>
+										<li><a href="htctab.aspx">HTC</a></li>
+                                        <li><a href="microsofttab.aspx">Microsoft</a></li>
+										<li><a href="micromaxtab.aspx">Micromax</a></li>
+                                        <li><a href="appletab.aspx">Apple</a></li>
+									</ul>
+								</li>								
+								<li class="col-md-4">
+									<h4>Tablets</h4>
+									<img src="images/menu/2.jpg" alt="Megamenu image"/>
+								</li>
+							</ul></div>
+						</li>		
+                         <li class="menu-item-has-children  megamenu">
+							<a href="">Find us</a>
+							<div class="sub-menu"><ul class="container">
+								<li class="col-md-2 col-md-offset-1">
+									
+									<ul>
+										<li><a href="feedback.aspx">Contact us</a></li>
+										<li><a href="about.aspx">About us</a></li>
+                                        
+									</ul>
+								</li>								
+								
+							</ul></div>
+						</li>						
+                        
+                        <li><a href="checkorderstatus.aspx">Check Order Status</a></li>
+						<li><a href="Login.aspx">Login</a></li>
+					</ul>
+				</nav>
+		    </div></div>
+			<div class="sticky-holder"></div>
+		</header>
+		
+        
+        <section class="statement" style="background-image: url(images/demo/statement_box_index.jpg); margin-bottom: 10px;">
+			<div class="container text-center">
+				<h1 class="style-2">The Mobile Store Websie</h1>
+				<h2>Pick The Best Mobile From Our Store</h2>
+				<a href="" target="_blank" class="btn btn-md"><span class="fa fa-arrow-circle-o-down"></span> Buy now</a>
+			</div>
+		</section>
+        <section>
+			<div class="container"><div class="row" style="margin-top: 35px; margin-bottom: 10px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div></div>
+        </section>
+		<%--<section>
+			<ul class="logos logos-5">
+				<li><a href="#"><img src="images/demo/envato.png" alt="Envato logo"><span class="hover"><img src="images/demo/envato-hover.png" alt="Envato logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/dribble.png" alt="Dribble logo"><span class="hover"><img src="images/demo/dribble-hover.png" alt="Dribble logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/facebook.png" alt="Facebook logo"><span class="hover"><img src="images/demo/facebook-hover.png" alt="Facebook logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/twitter.png" alt="Twitter logo"><span class="hover"><img src="images/demo/twitter-hover.png" alt="Twitter logo hover"></span></a></li>
+				<li><a href="#"><img src="images/demo/behance.png" alt="Behance logo"><span class="hover"><img src="images/demo/behance-hover.png" alt="Behance logo hover"></span></a></li>
+			</ul>
+			<div class="container text-center">
+				<h3 class="style-2">some of our clients that trust us, be shure to be one of them</h3>
+			</div>
+		</section>--%>
+		<footer class="site-footer">
+			
+			<div class="copyright-footer text-center">
+				<div class="container">
+					<div class="row">
+						copyright 2016 © TheMobileStore.com. Designed By Simranjit Singh
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+    </div>
+    <!-- including scripts -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap/tab.js"></script>
+	<script src="assets/js/theme.js"></script>
+	<script src="assets/js/bootstrap/alert.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<!-- including layerslider scripts -->
+	<script src="assets/js/greensock.js"></script>
+    <script src="assets/js/layerslider.transitions.js"></script>
+    <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $('#layerslider').layerSlider({
+	 			skin 				: 'altus',
+            	skinsPath 			: 'assets/css/layerslider/skins/',
+            	responsiveUnder		: 1200,
+            	layersContainer 	: 1200,
+            	responsive 			: false,
+            	showCircleTimer 	: false,
+            	thumbnailNavigation : 'disabled',
+            	navStartStop		: false,
+	        });
+	    });
+	</script>
+    </form>
+</body>
+</html>
